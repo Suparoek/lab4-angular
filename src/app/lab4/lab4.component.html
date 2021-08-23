@@ -1,0 +1,6 @@
+<div class="row">
+    <div *ngFor="let nums of num">
+        <p *ngIf="nums % 2 ===0" [ngClass]="{'number-even':true}">{{nums}}</p>
+        <p *ngIf="nums % 2 !==0" [ngClass]="{'number-odd':true}">{{nums}}</p>
+    </div>
+</div>
